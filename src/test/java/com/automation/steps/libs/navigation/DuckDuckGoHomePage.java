@@ -1,6 +1,6 @@
-package com.automation.steps.navigation;
+package com.automation.steps.libs.navigation;
 
-import net.serenitybdd.annotations.DefaultUrl;
+import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.pages.PageObject;
 
 @DefaultUrl("https://duckduckgo.com")

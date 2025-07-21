@@ -1,4 +1,4 @@
-package com.automation.steps.search;
+package com.automation.steps.libs.search;
 
 import net.serenitybdd.screenplay.targets.Target;
 

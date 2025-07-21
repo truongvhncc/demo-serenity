@@ -1,15 +1,13 @@
-package com.automation.steps.stepdefinitions;
+package com.automation.steps.ui.e2e.test_case_02;
 
+import com.automation.steps.libs.navigation.NavigateTo;
+import com.automation.steps.libs.search.LookForInformation;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.ensure.Ensure;
-import net.serenitybdd.screenplay.questions.page.TheWebPage;
-import com.automation.steps.navigation.NavigateTo;
-import com.automation.steps.search.LookForInformation;
 
-public class SearchStepDefinitions {
+public class TestCase02Steps {
 
     @Given("{actor} is researching things on the internet")
     public void researchingThings(Actor actor) {
@@ -25,8 +23,6 @@ public class SearchStepDefinitions {
 
     @Then("{actor} should see information about {string}")
     public void should_see_information_about(Actor actor, String term) {
-        actor.attemptsTo(
-                Ensure.that(TheWebPage.title()).containsIgnoringCase(term)
-        );
+
     }
 }

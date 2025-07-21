@@ -1,4 +1,4 @@
-package com.automation.steps.navigation;
+package com.automation.steps.libs.navigation;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
