@@ -1,4 +1,4 @@
-package starter.search;
+package com.automation.steps.search;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
