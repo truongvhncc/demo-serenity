@@ -1,6 +1,6 @@
-package com.automation.steps.libs.Models;
+package com.automation.autofx.sample_service.models;
 
-import com.automation.steps.common.utils.CommonUtils;
+import com.automation.autofx.common.utils.CommonUtils;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class SearchForm {

@@ -1,6 +1,6 @@
-package com.automation.steps.libs.Questions;
+package com.automation.autofx.sample_service.questions;
 
-import com.automation.steps.libs.Models.SearchForm;
+import com.automation.autofx.sample_service.models.SearchForm;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;

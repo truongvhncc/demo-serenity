@@ -1,4 +1,4 @@
-package com.automation.steps.libs.Models;
+package com.automation.autofx.sample_service.models;
 
 import net.serenitybdd.screenplay.targets.Target;
 

@@ -1,7 +1,7 @@
-package com.automation.steps.common.sampleService;
+package com.automation.steps.common;
 
-import com.automation.steps.common.questions.OpenConnectionToDatabase;
-import com.automation.steps.common.utils.CommonUtils;
+import com.automation.autofx.common.questions.OpenConnectionToDatabase;
+import com.automation.autofx.common.utils.CommonUtils;
 import net.serenitybdd.screenplay.Actor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

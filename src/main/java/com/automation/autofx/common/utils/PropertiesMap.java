@@ -1,4 +1,4 @@
-package com.automation.steps.common.utils;
+package com.automation.autofx.common.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

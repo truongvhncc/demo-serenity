@@ -1,4 +1,4 @@
-package com.automation.steps.libs.Tasks;
+package com.automation.autofx.sample_service.tasks;
 
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
