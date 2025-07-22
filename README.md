@@ -4,7 +4,6 @@
 Learning resources for serenity framework ([https://serenity-bdd.github.io/](https://serenity-bdd.github.io/))
 
 ### The project directory structure
-The project has build scripts for both Maven and Gradle, and follows the standard directory structure used in most Serenity projects:
 ```angular2html
 ├── src/ │ 
 ├── main/ │ 
