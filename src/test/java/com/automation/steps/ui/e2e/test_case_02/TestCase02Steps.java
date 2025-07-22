@@ -1,7 +1,7 @@
 package com.automation.steps.ui.e2e.test_case_02;
 
-import com.automation.steps.libs.navigation.NavigateTo;
-import com.automation.steps.libs.search.LookForInformation;
+import com.automation.steps.libs.Tasks.NavigateTo;
+import com.automation.steps.libs.Questions.LookForInformation;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

@@ -2,7 +2,7 @@ Feature: Search by keyword - green
 
   @green @search
   Scenario: Searching for 'green'
-    Given Sergey is researching things on the internet
-    When he looks up "green"
-    Then he should see information about "green"
+    Given Operator is researching things on the internet
+    When Operator looks up "green"
+    Then Operator should see information about "green"
 
