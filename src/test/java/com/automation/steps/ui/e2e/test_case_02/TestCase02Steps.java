@@ -1,28 +1,37 @@
 package com.automation.steps.ui.e2e.test_case_02;
 
-import com.automation.steps.libs.Tasks.NavigateTo;
-import com.automation.steps.libs.Questions.LookForInformation;
+import com.automation.autofx.sample_service.tasks.NavigateTo;
+import com.automation.autofx.sample_service.questions.LookForInformation;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.ClearCookiesPolicy;
+import net.thucydides.core.annotations.Managed;
+import org.openqa.selenium.WebDriver;
 
 public class TestCase02Steps {
+    @Managed(driver = "chrome", clearCookies = ClearCookiesPolicy.BeforeEachTest)
+    WebDriver webDriverForOperator;
 
-    @Given("{actor} is researching things on the internet")
-    public void researchingThings(Actor actor) {
+    Actor actor = new Actor("Operator");
+
+    @Given("Operator is researching things on the internet")
+    public void researchingThings() {
+        actor.can(BrowseTheWeb.with(webDriverForOperator));
         actor.wasAbleTo(NavigateTo.theSearchHomePage());
     }
 
-    @When("{actor} looks up {string}")
-    public void searchesFor(Actor actor, String term) {
+    @When("Operator looks up {string}")
+    public void searchesFor(String term) {
         actor.attemptsTo(
                 LookForInformation.about(term)
         );
     }
 
-    @Then("{actor} should see information about {string}")
-    public void should_see_information_about(Actor actor, String term) {
+    @Then("Operator should see information about {string}")
+    public void should_see_information_about(String term) {
 
     }
 }

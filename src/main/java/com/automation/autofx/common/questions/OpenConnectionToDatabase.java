@@ -1,6 +1,6 @@
-package com.automation.steps.common.questions;
+package com.automation.autofx.common.questions;
 
-import com.automation.steps.common.utils.DatabaseUtils;
+import com.automation.autofx.common.utils.DatabaseUtils;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.annotations.Subject;

@@ -1,4 +1,4 @@
-package com.automation.steps.common.utils;
+package com.automation.autofx.common.utils;
 
 import net.serenitybdd.core.Serenity;
 import org.apache.commons.lang3.exception.ExceptionUtils;
