@@ -19,6 +19,7 @@
         <encoding>UTF-8</encoding>
         <tags></tags>
         <webdriver.base.url></webdriver.base.url>
+        <env>default</env>
     </properties>
     <dependencies>
         <dependency>
