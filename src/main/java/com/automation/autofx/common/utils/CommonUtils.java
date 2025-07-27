@@ -14,6 +14,8 @@ public class CommonUtils {
     private static final Logger LOGGER = LoggerFactory.getLogger(CommonUtils.class);
     public static final Map<String,String> variableProperty = readVariableProperties();
     public static final Map<String,String> xpathVariable = readXPathPropertyWithLang();
+    public static final int UI_WAITING_TIME_INTERVAL;
+    public static final int UI_WAITING_TOTAL_TIME;
     private static Properties systemProperties;
 
     public CommonUtils() {
@@ -216,5 +218,10 @@ public class CommonUtils {
         } else {
             return null;
         }
+    }
+
+    static {
+        UI_WAITING_TIME_INTERVAL = Integer.parseInt((String) variableProperty.get("waitIntervalForUiInMillisecond"));
+        UI_WAITING_TOTAL_TIME = Integer.parseInt((String) variableProperty.get("waitForUiInMillisecond"));
     }
 }

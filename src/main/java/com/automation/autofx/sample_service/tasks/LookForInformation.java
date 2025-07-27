@@ -1,6 +1,6 @@
-package com.automation.autofx.sample_service.questions;
+package com.automation.autofx.sample_service.tasks;
 
-import com.automation.autofx.sample_service.models.SearchForm;
+import com.automation.autofx.sample_service.models.MainPage;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
@@ -10,7 +10,7 @@ public class LookForInformation {
     public static Performable about(String searchTerm) {
         return Task.where("{0} searches for '" + searchTerm + "'",
                 Enter.theValue(searchTerm)
-                        .into(SearchForm.SEARCH_FIELD)
+                        .into(MainPage.SEARCH_FIELD)
                         .thenHit(Keys.ENTER)
         );
     }

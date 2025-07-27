@@ -1,7 +1,7 @@
 package com.automation.steps.ui.e2e.test_case_01;
 
+import com.automation.autofx.sample_service.tasks.LookForInformation;
 import com.automation.autofx.sample_service.tasks.NavigateTo;
-import com.automation.autofx.sample_service.questions.LookForInformation;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

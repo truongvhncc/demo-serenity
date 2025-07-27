@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = {"classpath:features/e2e/search_by_keyword_red.feature"},
+        features = {"classpath:features/e2e/check_ui.feature"},
         plugin = {"pretty"},
         glue = {"com.automation.steps.ui.e2e.test_case_02"
         }
